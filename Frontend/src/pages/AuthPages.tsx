@@ -19,12 +19,12 @@ export const LoginPage: React.FC = () => {
     setLoading(true);
     try {
       const res = await authApi.login(form);
+      console.log(res);
       setAuth(res.data.user, res.data.token);
       toast.success(`Welcome back, ${res.data.user.name}!`);
       navigate('/');
     } catch (err: any) {
       toast.error(err.response?.data?.message ?? 'Login failed');
-      navigate('/signup');
     } finally {
       setLoading(false);
     }
