@@ -24,6 +24,7 @@ export const LoginPage: React.FC = () => {
       navigate('/');
     } catch (err: any) {
       toast.error(err.response?.data?.message ?? 'Login failed');
+      navigate('/signup');
     } finally {
       setLoading(false);
     }

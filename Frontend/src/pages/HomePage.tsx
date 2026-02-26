@@ -52,7 +52,7 @@ export const HomePage: React.FC = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/products">
-                <Button size="lg" className="bg-sand-50 text-ink hover:bg-sand-200">
+                <Button size="lg" className="bg-sand-20 text-ink hover:bg-sand-200">
                   Shop Now <ArrowRight size={16} />
                 </Button>
               </Link>
